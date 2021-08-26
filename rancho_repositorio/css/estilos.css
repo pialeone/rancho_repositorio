@@ -1,0 +1,39 @@
+/* COLORES 
+
+ROJO: #990000
+    
+*/
+
+.c-rojo {
+    color: #990000
+}
+
+.c-violeta {
+    color: #660066
+}
+
+.bg-negro {
+    color:black;
+} 
+
+
+/* NAVBAR */
+    nav a img {
+        width: 60px;}
+
+/* FOOTER */
+
+footer a img {
+    width: 60px;
+}
+
+/*  BODY */
+
+body {
+    background-color: black;
+}
+
+/* FOTO PORTADA */
+
+#portada img {
+    width: 100%;}

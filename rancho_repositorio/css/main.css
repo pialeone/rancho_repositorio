@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/* FUENTES */
+@font-face {
+  font-family: arcade;
+  src: url("../fuentes/arcade.TTF");
+}
+
+/* COLORES */
+.c-rojo {
+  color: #990000;
+}
+
+.c-violeta {
+  color: #660066;
+}
+
+.bg-negro {
+  color: black;
+}
+
+/* NAVBAR */
+nav div a img {
+  width: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*  BODY */
+body {
+  background-color: black;
+  font-family: 'arcade';
+}
+
+/* LOGO */
+#logo {
+  margin: 5px;
+  align-self: center;
+  justify-self: space-between;
+  transition: all 2s;
+}
+
+#logo:hover {
+  transform: rotateZ(90deg);
+}
+
+/* FOTO PORTADA */
+#portada img {
+  width: 100%;
+}
+
+/*  TITULOS - SUBTIT */
+.portada__titulo {
+  color: #990000;
+  text-align: center;
+  text-shadow: blueviolet 3px 3px 5px;
+}
+
+.portada__carousel {
+  background-color: #660066;
+}
+
+/*  FOOTER  */
+.footer__pregunta {
+  color: #990000;
+  align-items: center;
+}
+
+.footer__button {
+  color: #990000;
+  flex: space-evenly;
+}
+
+.footer__redes {
+  justify-content: space-around;
+  margin: 4px;
+  padding: 1px;
+}
+
+footer a img {
+  width: 60px;
+}
+
+/*justify-content-around justify-content-lg-evenly m-4*/
+/*  GALERIA */
+img {
+  width: 100%;
+}
+
+.galeria__titulo {
+  color: #b41212;
+  text-shadow: green 3px 3px 5px;
+  font-size: 70px;
+  text-align: center;
+  justify-content: center;
+}
+
+.galeria__subtitulo {
+  color: #b41212;
+  text-shadow: green 3px 3px 5px;
+  font-size: 20px;
+  text-align: space-evenly;
+  justify-content: space-around;
+}
+
+.galeria__carousel {
+  background-color: green;
+}
+
+/* CONTACTO  */
+#grillaContacto {
+  display: grid;
+  grid-template-rows: 4fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-column-gap: 5px;
+  grid-template-areas: " videoAzul contacto videoAzul";
+  /* width: 90%;*/
+  height: 90%;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+#grillaContacto > * {
+  border: 1px solid black;
+}
+
+div#grillaContacto {
+  font-size: 21px;
+  /*text-align: center;
+    justify-items: center;*/
+}
+
+/* INTEGRANTES */
+.mx-auto {
+  display: flex;
+  /*display: flex; el cual vuelve al contenedor un elemento flex*/
+  align-items: center;
+  /*justify-content: center; le decimos a los elementos del contenedor flex que se ubiquen al centro del eje principal eje horizontal*/
+  justify-content: center;
+  /*align-items: center; estamos diciendo que queremos que los elementos dentro del contenedor flex se ubiquen en el centro del eje secundario eje vertical*/
+  min-height: 100vh;
+  /*min-height: 100vh; que significa tome como altura mínima del contenedor el total del alto de la ventana del navegador web utilizado.*/
+}
+
+.containerAdentro video {
+  width: 300px;
+  float: left;
+}
+
+.botonRojo, .botonVioleta, .botonVerde, .botonNaranja {
+  border-radius: 15px;
+  width: 100px;
+  color: white;
+  height: 15px;
+}
+
+.botonRojo {
+  background-color: #990000;
+  background-image: url(../images/pokechola.png);
+}
+
+.botonVioleta {
+  background-color: 660066;
+  background-image: url(../images/pokechola.png);
+}
+
+.botonVerde {
+  background-color: green;
+  background-image: url(../images/pokechola.png);
+}
+
+.botonNaranja {
+  background-color: orangered;
+  background-image: url(../images/pokechola.png);
+}
+
+/* EACH */
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+/* MIXING */
+video {
+  height: 50px;
+  width: 500px;
+}
+
+/* IF */
+p {
+  font-style: italic;
+}
+
+/*Creamos el bucle para usar los valores del mapa*/
+.icon--instagram {
+  background-color: #660066;
+}
+
+.icon--youtube {
+  background-color: #990000;
+}
+
+#broken {
+  width: 700px;
+  height: 400px;
+}
+
+.notfound {
+  justify-content: center;
+  align-items: center;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,255 @@
+/* FUENTES */ 
+@font-face {
+    font-family: arcade;
+    src: url("../fuentes/arcade.TTF");
+}
+
+/* COLORES */ 
+
+.c-rojo {
+    color: #990000
+}
+.c-violeta {
+    color: #660066
+}
+.bg-negro {
+    color:black;
+} 
+
+/* NAVBAR */
+nav div a img {
+        width: 60px;}
+
+a {
+    text-decoration: none;}
+        
+a:hover {
+    text-decoration: underline;}
+
+/*  BODY */
+
+body {
+    background-color: black;
+    font-family: 'arcade';
+}
+
+/* LOGO */
+
+#logo {
+margin: 5px;
+align-self: center;
+justify-self: space-between;
+transition: all 2s;
+}
+
+#logo:hover {
+transform: rotateZ(90deg);
+}
+
+/* FOTO PORTADA */
+
+#portada img {
+    width: 100%;}
+
+/*  TITULOS - SUBTIT */
+
+.portada__titulo {
+    color: #990000;
+    text-align: center;
+    text-shadow: blueviolet 3px 3px 5px ;}
+
+
+.portada__carousel {
+    background-color: #660066;
+}
+
+/*  FOOTER  */  
+
+.footer__pregunta {
+    color: #990000;
+    align-items: center;
+}
+
+.footer__button{
+    color:#990000;
+    flex: space-evenly;
+}
+
+.footer__redes{
+    justify-content: space-around;
+    margin: 4px;
+    padding: 1px;
+}
+
+footer a img {
+    width: 60px;
+}
+
+    /*justify-content-around justify-content-lg-evenly m-4*/
+
+/*  GALERIA */
+
+img {
+    width: 100%;
+}
+
+.galeria__titulo {
+    color: rgb(180, 18, 18);
+    text-shadow: green 3px 3px 5px;
+    font-size: 70px;
+    text-align: center;
+    justify-content: center;
+}
+
+.galeria__subtitulo {
+    color: rgb(180, 18, 18);
+    text-shadow: green 3px 3px 5px;
+    font-size: 20px;
+    text-align: space-evenly;
+    justify-content: space-around;
+}
+.galeria__carousel {
+    background-color:green;
+}
+
+/* CONTACTO  */
+
+#grillaContacto {
+    display: grid;
+    grid-template-rows: 4fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-column-gap: 5px;
+    grid-template-areas:" videoAzul contacto videoAzul";
+/* width: 90%;*/
+    height: 90%;
+    text-align: center;
+    align-items: center;
+    justify-items:center;
+    } 
+    
+    #grillaContacto > *{
+        border: 1px solid black;
+        } 
+    
+    div#grillaContacto {
+    font-size: 21px;
+  
+    /*text-align: center;
+    justify-items: center;*/
+    }
+
+
+/* INTEGRANTES */
+
+.mx-auto {
+    display: flex;  /*display: flex; el cual vuelve al contenedor un elemento flex*/
+    
+    align-items: center;  /*justify-content: center; le decimos a los elementos del contenedor flex que se ubiquen al centro del eje principal eje horizontal*/
+    
+    justify-content: center; /*align-items: center; estamos diciendo que queremos que los elementos dentro del contenedor flex se ubiquen en el centro del eje secundario eje vertical*/
+    
+    min-height: 100vh;  /*min-height: 100vh; que significa tome como altura mínima del contenedor el total del alto de la ventana del navegador web utilizado.*/
+  }
+
+// ADENTRO // 
+
+.containerAdentro video{
+    width: 300px;
+    float: left
+}
+
+
+
+// EXTEND // placeholder 
+
+%boton{
+    border-radius: 15px;
+    width: 100px;
+    color: white;
+    height: 15px;
+}
+ 
+.botonRojo{
+    @extend %boton;
+    background-color: #990000;
+    background-image: url(../images/pokechola.png)
+}
+
+.botonVioleta{
+    @extend %boton;
+    background-color: 660066;
+    background-image: url(../images/pokechola.png);
+}
+
+.botonVerde {
+    @extend %boton;
+    background-color: green;
+    background-image: url(../images/pokechola.png);
+}
+
+.botonNaranja {
+    @extend %boton;
+    background-color: orangered;
+    background-image: url(../images/pokechola.png);
+}
+
+/* EACH */ 
+
+@each $header, $size in (h1: 2em, h2: 1.5em, h4: 1.2em) {
+    #{$header} {
+      font-size: $size;
+    }
+  }
+
+/* MIXING */
+
+@mixin tamaniovideo($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ video {
+    @include tamaniovideo(500px, 50px);
+ 
+ }
+ 
+ /* IF */
+
+$letra: rancho;
+p {
+  @if $letra == duda {
+    font-style: underline;
+  } @else if $letra == tcreias {
+    font-style: none;
+  } @else if $letra == rancho {
+    font-style: italic;
+  } @else {
+    color: black;
+  }
+}
+
+
+//MAPS//
+
+$socialmedia: (
+        instagram: #660066,
+        youtube:  #990000,
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $socialmedia, $color in $socialmedia {
+   .icon--#{$socialmedia} {
+       background-color: $color;
+   }
+}
+
+
+// 404 //
+
+#broken {
+    width: 700px;
+    height: 400px;
+}
+
+.notfound {
+    justify-content: center;
+    align-items: center;
+}
