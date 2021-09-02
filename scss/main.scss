@@ -31,6 +31,7 @@ a:hover {
 body {
     background-color: black;
     font-family: 'arcade';
+    text-decoration: none;
 }
 
 /* LOGO */
@@ -85,8 +86,6 @@ footer a img {
     width: 60px;
 }
 
-    /*justify-content-around justify-content-lg-evenly m-4*/
-
 /*  GALERIA */
 
 img {
@@ -133,9 +132,7 @@ img {
     
     div#grillaContacto {
     font-size: 21px;
-  
-    /*text-align: center;
-    justify-items: center;*/
+ 
     }
 
 
@@ -155,10 +152,8 @@ img {
 
 .containerAdentro video{
     width: 300px;
-    float: left
-}
-
-
+    float: left;
+} 
 
 // EXTEND // placeholder 
 
