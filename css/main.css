@@ -143,7 +143,11 @@ div#grillaContacto {
 
 .containerAdentro video {
   width: 300px;
-  float: left;
+}
+
+.containerAdentro {
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .botonRojo, .botonVioleta, .botonVerde, .botonNaranja {
