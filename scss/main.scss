@@ -118,9 +118,6 @@ img {
     grid-template-rows: 4fr;
     grid-template-columns: 1fr 3fr 1fr;
     grid-column-gap: 5px;
-    grid-template-areas:" videoAzul contacto videoAzul";
-/* width: 90%;*/
-    height: 90%;
     text-align: center;
     align-items: center;
     justify-items:center;
@@ -131,9 +128,7 @@ img {
         } 
     
     div#grillaContacto {
-    font-size: 21px;
- 
-    }
+    font-size: 21px; }
 
 
 /* INTEGRANTES */
