@@ -168,7 +168,7 @@ img {
     flex-direction: column;
 }
 
-// EXTEND // BOTONES REPERTORIO 
+// BOTONES REPERTORIO - EXTEND //
 
 %boton{
     border-radius: 15px;
@@ -201,7 +201,7 @@ img {
     background-image: url(../images/pokechola.png);
 }
 
-/* EACH */ 
+/* TAMAÑO TITULOS - EACH */ 
 
 @each $header, $size in (h1: 2em, h2: 1.5em, h4: 1.2em) {
     #{$header} {
@@ -224,12 +224,11 @@ p {
   }
 }
 
-//MAPS//
+//BOTON IG - MAPS//
 
 $socialmedia: (
         instagram: #660066,
 ); 
-/*Creamos el bucle para usar los valores del mapa*/
 @each $socialmedia, $color in $socialmedia {
    .icon--#{$socialmedia} {
        background-color: $color;
