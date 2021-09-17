@@ -64,6 +64,24 @@ transform: rotateZ(90deg);
     background-color: #660066;
 }
 
+// ANIMACION TITULO //
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 /*  FOOTER  */  
 
 .footer__pregunta {
@@ -145,17 +163,12 @@ img {
 
 // ADENTRO // 
 
-.containerAdentro video{
-    width: 300px;
-    ;
-} 
-
 .containerAdentro {
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-// EXTEND // placeholder 
+// EXTEND // BOTONES REPERTORIO 
 
 %boton{
     border-radius: 15px;
@@ -195,17 +208,6 @@ img {
       font-size: $size;
     }
   }
-
-/* MIXING */
-
-@mixin tamaniovideo($width, $height) {
-    height: $height;
-    width: $width;
- }
- video {
-    @include tamaniovideo(500px, 50px);
- 
- }
  
  /* IF */
 
@@ -222,12 +224,10 @@ p {
   }
 }
 
-
 //MAPS//
 
 $socialmedia: (
         instagram: #660066,
-        youtube:  #990000,
 ); 
 /*Creamos el bucle para usar los valores del mapa*/
 @each $socialmedia, $color in $socialmedia {
@@ -235,7 +235,6 @@ $socialmedia: (
        background-color: $color;
    }
 }
-
 
 // 404 //
 
@@ -248,3 +247,4 @@ $socialmedia: (
     justify-content: center;
     align-items: center;
 }
+

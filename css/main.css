@@ -65,6 +65,22 @@ body {
   background-color: #660066;
 }
 
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 /*  FOOTER  */
 .footer__pregunta {
   color: #990000;
@@ -138,10 +154,6 @@ div#grillaContacto {
   min-height: 100vh;
 }
 
-.containerAdentro video {
-  width: 300px;
-}
-
 .containerAdentro {
   flex-wrap: wrap;
   flex-direction: column;
@@ -187,12 +199,6 @@ h4 {
   font-size: 1.2em;
 }
 
-/* MIXING */
-video {
-  height: 50px;
-  width: 500px;
-}
-
 /* IF */
 p {
   font-style: italic;
@@ -201,10 +207,6 @@ p {
 /*Creamos el bucle para usar los valores del mapa*/
 .icon--instagram {
   background-color: #660066;
-}
-
-.icon--youtube {
-  background-color: #990000;
 }
 
 #broken {
